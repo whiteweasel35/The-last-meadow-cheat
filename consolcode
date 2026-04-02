@@ -3,7 +3,7 @@ var otoTıkla = setInterval(function() {
     var butonlar = document.querySelectorAll('.activityButtonText__8af73');
     butonlar.forEach(function(buton) {
         if (buton.innerText === "Macera") {
-            // Hem click hem de mouse eventlerini tetikler (Discord'un algılaması için)
+   
             buton.click();
             buton.dispatchEvent(new MouseEvent('mousedown', {bubbles: true}));
             buton.dispatchEvent(new MouseEvent('mouseup', {bubbles: true}));
